@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+    background: url(working_temp.jpg) top center; /* replace image */
+	background-size: cover;
+    padding: 30px;
+    text-align: center;
+	height: 100vh;
+	
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+/* when a link is clicked, it gets highlighted */
+.highlighted {
+  color: red;
+}
+
+/* make each section taller and give them different colors */
+#content {
+  margin-top: 50px;
+
+}
+
+#content div {
+	text-align: center;
+}
+
+.smallheader {
+	text-align: center;
+}
+
+/* About Us */
+#section1 {
+  background-color: lightcoral;
+  height: 100vh;
+}
+
+#about_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#slideshow {
+	grid-column: 1 / span 2;
+	background: white;
+	height: 50vh;
+}
+
+#values {
+	grid-column: 3 / span 2;
+	background: pink;
+	height: 50vh;
+}
+
+#officers {
+	grid-column: 1 / span 4;
+	background: yellow;
+	height: 46.8vh;
+}
+
+#section2 {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+#section3 {
+  background-color: lightgreen;
+  height: 100vh;
+}
+
+#section4 {
+	background-color: cyan;
+	height: 100vh;
+}
+
+#section5 {
+	background-color: pink;
+	height: 100vh;
+}
