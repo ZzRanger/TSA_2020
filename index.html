@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smooth Scroll</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+    <script src="index.js"></script>
+</head>
+
+  <body>
+
+<div class="intro">
+	<div class = "logo">
+		<img src = "TSA/logo.jpg" alt = "TSA logo"> </img>
+	</div>
+	<div>
+		<h2>Scroll Down</h2>
+		<p>Scroll down to see the sticky effect.</p>
+	</div>
+</div>
+
+<div id="navbar">
+		<span>
+			<a href="#sectionLink1"> 
+			About Us
+			</a>
+		</span>
+		<span>
+			<a href="#sectionLink2">
+			Activities
+			</a>
+		</span>
+		<span>
+			<a href="#sectionLink3">
+			Student Projects
+			</a>
+		</span>
+		<span>
+			<a href="#sectionLink4">
+			CTE
+			</a>
+		</span>
+		<span>
+			<a href="#sectionLink5">
+			Design Brief
+			</a>
+		</span>
+	</div>
+
+<div id="content">
+      <div id="section1">
+		<div class = "smallheader"> About Us </div>
+		<div id = "about_grid">
+			<div id = "slideshow">
+				<p> Picture Slideshow (Carousel) </p>
+			</div>
+			<div id = "values">
+				<p> Motto and Creed </p>
+			</div>
+			<div id = "officers">
+				<p> Officers </p>
+			</div> 
+		</div>
+	  </div>
+	<div>
+	    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+		<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+		<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+		<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+		<div id="Home" class="tabcontent">
+		  <h3>Home</h3>
+		  <p>Home is where the heart is..</p>
+		</div>
+
+		<div id="News" class="tabcontent">
+		  <h3>Meeting</h3>
+		  <p>Some news this fine day!</p>
+		</div>
+
+		<div id="Contact" class="tabcontent">
+		  <h3>Competition</h3>
+		  <p>Get in touch, or swing by for a cup of coffee.</p>
+		</div>
+
+		<div id="About" class="tabcontent">
+		  <h3>Outreach</h3>
+		  <p>Who we are and what we do.</p>
+		</div>
+	</div>
+
+      
+      <div id="section3">History</div>
+	  <div id="section4">COMING SOON</div>
+	  <div id="section5">COMING SOON</div>
+    </div>
+	
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+</script>
+</body>
+
+</html>
+
+<!-- 
+Sources
+1. https://github.com/AlbertoMontalesi/InspiredWebDev-Tutorials/blob/master/smooth_scroll/style.css
+2. https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+3. https://www.w3schools.com/bootstrap/bootstrap_ref_js_tab.asp
+-->
