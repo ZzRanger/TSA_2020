@@ -21,13 +21,6 @@
   <body onload="openPage('Home', this, 'green')">
 <div class = "chapter_content">
 <div class="intro">
-	<div class = "logo">
-		<img src = "TSA/logo.jpg" alt = "TSA logo"> </img>
-	</div>
-	<div>
-		<h2>Scroll Down</h2>
-		<p>Scroll down to see the sticky effect.</p>
-	</div>
 </div>
 
 <div id="navbar">
@@ -79,7 +72,10 @@
 
 <div class ="content">
       <div id="section1">
-		<h1> About Us </h1>
+		<div class = "tsa_desc">
+			<h1> What is TSA </h1>
+			<p> TSA stands for Technology Student Association, a national organization of students engaged in science, technology, engineering and mathematics (STEM). Currently, TSA's membership includes over 233,000 middle and high school students in approximately 2,000 schools spanning 49 states. This organization is supported by educators, parents, and business leaders who believe in the need for a technologically literate society. Through a range of competitive events and leadership opportunities, TSA members can explore interdisciplinary education. From engineers to business managers, numerous alumni credit TSA with a positive influence on their lives. TSA members have the opportunity to compete at state conferences and at the annual National Conference. Expert judging by technology educators and industry representatives inspires the best from participants. Members are awarded not only with medals and trophies but also with memories of innovation and collaboration.</p>
+		</div>
 		<div id = "about_grid">	
 			
 			<div class="slideshow">
@@ -133,9 +129,13 @@
 			  </div>
 			</div>
 			<div id = "values">
-				<h2> Motto and Creed </h2>
+				<h2> Creed </h2>
 				<div class = "creed">
 				I believe that Technology Education holds an important place in my life in the technical world. I believe there is a need for the development of good attitudes concerning work, tools, materials, experimentation, and processes of industry. Guided by my teachers, artisans from industry, and my own initiative, I will strive to do my best in making my school, community, state, and nation better places in which to live. I will accept the responsibilities that are mine. I will accept the theories that are supported by proper evidence. I will explore on my own for safer, more effective methods of working and living. I will strive to develop a cooperative attitude and will exercise tact and respect for other individuals. Through the work of my hands and mind, I will express my ideas to the best of my ability. I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans.
+				</div>
+				<h2> Motto </h2>
+				<div class = "motto">
+				Learning to lead in a technological world
 				</div>
 				
 			</div>
@@ -147,6 +147,10 @@
 					<div class = "officer_pic">
 					</div>
 					<div class = "officer_pic">
+					</div>
+					<div class = "officer_pic">
+					</div>
+					<div class = "officer_desc">
 					</div>
 					<div class = "officer_desc">
 					</div>
@@ -160,58 +164,66 @@
 	  </div>
 	<div id = "section2">
 	    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-		<button class="tablink" onclick="openPage('News', this, 'green')">Schedule</button>
-		<button class="tablink" onclick="openPage('Meetings', this, 'cyan')">Competitions</button>
-		<button class="tablink" onclick="openPage('Contact', this, 'blue')">Outreach</button>
+		<button class="tablink" onclick="openPage('Competitions', this, 'cyan')">Competitions</button>
+		<button class="tablink" onclick="openPage('Outreach', this, 'blue')">Outreach</button>
 
 		<div id="Home" class="tabcontent">
 		  <h3>Home</h3>
-	    </div>
-		<div class = "home_grid">
-		</div>
-		<div class = "on_desc">
-		</div>
-		<div class = "tsa_logo">
-		</div>
-		<div class = "motto">
-		</div>
-		<div class = "mission_statement">
-		</div>
-
-		<div id="Schedule" class="tabcontent">
-		  <h3>Schedule</h3>
-		  <div class = "schedule"> 
-		  </div>
+			<div class = "home_grid">
+				<div class = "schedule">
+				</div>
+				<div class = "updates">
+				</div>
+			</div>
 		</div>
 
 		<div id="Competitions" class="tabcontent">
-		  <h3>Competitions</h3>
-		  <div class = "olathe_comp">
-		  </div>
-		  <div class = "state_comp">
-		  </div>
+			<h3>Competitions</h3>
+			<div class = "gen_grid">
+				<div class = "gen_pic"> </div>
+				<div class = "gen_pic"> </div>
+				<div class = "gen_title"> </div>
+				<div class = "gen_title"> </div>
+				<div class = "gen_desc"> </div>
+				<div class = "gen_desc"> </div>
+			</div>
+		  
 		</div>
 
 		<div id="Outreach" class="tabcontent">
 		  <h3>Outreach</h3>
-		  <div class = "coding_club">
-		  </div>
-		  <div class = "lit">
-		  </div>
+			<div class = "gen_grid">
+				<div class = "gen_pic"> </div>
+				<div class = "gen_pic"> </div>
+				<div class = "gen_title"> </div>
+				<div class = "gen_title"> </div>
+				<div class = "gen_desc"> </div>
+				<div class = "gen_desc"> </div>
+			</div>
 		</div>
 	</div>
     <div id="section3">
 		<h3> History </h3>
-		<div class = "on_history">
+		<div class = "on_hist_grid">
 		</div>
-		<div class = "awards">
+		<div class = "awards_grid">
 		</div>
 	</div>
 </div>
 </div>
-	<div class = "content">
-	  <div id="section4">CTE</div>
-	  <div id="section5">COMING SOON</div>
+<div class = "content">
+
+	<div id="section4">
+	<h3> Course Offerings </h3>
+	<div class = "class_grid">
+		<div class = "indus_tech">
+		</div>
+		<div class = "business">
+		</div>
+		<div class = "media">
+		</div>
+	</div>
+	</div>
     </div>
 	</div>
 	
