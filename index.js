@@ -1,3 +1,4 @@
+/* Sticky Navbar Go To Tab */ 
 document.addEventListener("DOMContentLoaded", () => {
   //  little hack to detect if the user is on ie 11
   const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
@@ -32,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 }) 
 
+/* Static Navbar */ 
+
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
@@ -56,5 +59,7 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-// Navbar code
+
+
+
 
