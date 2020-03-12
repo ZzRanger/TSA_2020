@@ -2,7 +2,9 @@
 /* Style tab links */
 
 .chapter_content {
-	background-color: brown;
+	background-color: white;
+	height: auto;
+	margin: 0;
 }
 
 body {
@@ -11,9 +13,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.chapter_content h1 {
+	padding: 20px;
+}
+
 .intro {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
     background: url(TSA_LOGO.jpg) top center; /* replace image */
 	background-size: cover;
     padding: 30px;
@@ -75,7 +80,9 @@ body {
 
 /* make each section taller and give them different colors */
 .content {
-
+  background-color: white;
+  height: auto;
+  margin: 0;
 }
 
 .content div {
@@ -84,7 +91,7 @@ body {
 
 /* About Us */
 #section1 {
-  background-color: lightcoral;
+  background-color: white;
   z-index: 10;
   
 }
@@ -102,13 +109,13 @@ body {
 }
 #values {
 	width: 100%;
-	background-color: blue;
+	background-color: white;
 	border: solid 10px blue;
 }
 
 #officers {
 	grid-column: 1 / 4;
-	background-color: yellow;
+	background-color: white;
 	grid-row: 500px;
 }
 
@@ -124,7 +131,7 @@ body {
 #officer_grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	background-color: magenta;
+	background-color: white;
 	justify-items: center;
 	align-items: center;
 	padding: 50px;
@@ -140,7 +147,7 @@ body {
 
 .officer_desc {
 	grid-gap: 20px 0px;
-	background-color: orange;
+	background-color: white;
 	border: 2px solid red;
 }
 
@@ -152,17 +159,17 @@ body {
 }
 
 #section2 {
-  background-color: lightblue;
+  background-color: white;
   height: auto;
 }
 
-#Home {background-color: red;}
-#Competitions {background-color: green;}
-#Outreach {background-color: blue;}
+#Home {background-color: white;}
+#Competitions {background-color: white;}
+#Outreach {background-color: white;}
 
 .tablink {
-  background-color: #555;
-  color: white;
+  background-color: white;
+  color: black;
   float: left;
   border: none;
   outline: none;
@@ -173,12 +180,12 @@ body {
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: black;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: black;
   display: none;
   padding: 100px 20px;
   height: 100%;
@@ -192,13 +199,24 @@ body {
 	align-items: center;
 }
 
-.schedule_table {
+.schedule_table td{
+	padding: 10px;
+	border-bottom: 2px solid black; 
+	text-align: center;
+	font-size: 15px;
+}
+
+.schedule_table th {
+	padding: 10px;
+	border-bottom: 5px solid black; 
+	text-align: center;
+	font-size: 25px;
 }
 
 .updates {
 	display: grid;
 	align-items: center;
-	grid-gap: 30px 0px;
+	grid-gap: 20px 0px;
 }
 
 .gen_grid {
@@ -212,7 +230,7 @@ body {
 }
 
 #section3 {
-  background-color: lightgreen;
+  background-color: white;
   height: auto;
 }
 
@@ -349,6 +367,29 @@ body {
 .awards_grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+}
+
+.awards_table {
+    border-collapse: collapse;
+	
+}
+
+.awards_table td{
+	padding: 10px;
+	border-bottom: 2px solid black; 
+	text-align: center;
+}
+
+.awards_table th {
+	padding: 10px;
+	border-bottom: 5px solid black; 
+	text-align: center;
+}
+
+.awards_table h2 {
+	font-size: 200px;
 }
 
 .awards_pic {
@@ -393,6 +434,8 @@ body {
 }
 
 .inline-photo {
+  display: flex;
+  flex-direction: column;
   border: 1em solid #fff;
   border-bottom: 4em solid #fff;
   border-radius: .25em;
@@ -409,12 +452,12 @@ body {
 
 .inline-photo.is-visible {
   opacity: 1;
-  transform: rotateZ(-1deg);
+  transform: rotateZ(0deg);
 }
 
 #section4 {
-	background-color: cyan;
-	height: 1000px;
+	background-color: white;
+	height: auto;
 }
 
 .class_grid {
@@ -476,7 +519,6 @@ body {
     background-color: rgba(52,73,94,0.75);
 }
 
-
 .child a {
     display: none;
     font-size: 35px;
@@ -494,7 +536,230 @@ body {
     /*text-decoration: none;*/
 }
 
-
 /* Several different images */
 .bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg);}
 
+#teacher_row_one {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: white;
+	justify-items: center;
+	align-items: center;
+	padding: 20px;
+	grid-gap: 20px 0px;
+}
+
+#teacher_row_two {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: white;
+	justify-items: center;
+	align-items: center;
+	padding: 20px;
+	grid-gap: 0px 0px;	
+}
+
+.teacher_desc {
+	grid-gap: 20px 0px;
+	background-color: white;
+	border: 2px solid red;
+}
+
+
+.teacher_desc h3 {
+	
+}
+
+.teacher_desc button {
+}
+
+/* Facilities */
+
+.facilities {
+	background-color: white;
+	padding: 20px;
+}
+.fheading {
+	font-size: 50px;
+	text-align: center;
+	vertical-align: top;
+	padding: 20px;
+	color: white;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+/* Slideshow Code */
+
+.slide_container {
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	z-index: -1;
+}
+
+.slides {
+	display: flex;
+	height: 400px;
+	width: 600px;
+	flex-direction: column;
+    overflow:hidden;
+	border: 1px solid black;
+	position: relative;
+	margin:0 auto;
+ }
+.slide_content {
+	list-style:none;
+}
+.slide_item {
+}
+/* keyframes #anim_slides */
+
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+.slide_content .slide_item {
+    opacity:0;
+    position:absolute;
+    top:0;
+    /* css3 animation */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+/* css3 delays */
+
+.slide_item:nth-child(2), .slide_item:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slide_item:nth-child(3), .slide_item:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slide_item:nth-child(4), .slide_item:nth-child(4) div {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+}
+
+/* keyframes #anim_titles */
+@-webkit-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:9%;
+        opacity:1;
+    }
+    20% {
+       left:9%;
+       opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+   }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+
+.words {
+    background-color:#000000;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:0 0 5px #FFFFFF inset;
+    color:#FFFFFF;
+    font-size:20px;
+    margin:0 auto;
+    padding:20px;
+    position:absolute;
+    top:80%;
+    width:450px;
+	height: auto;
+	text-align: center;
+    /* css3 animation */
+    -webkit-animation-name: anim_titles;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
